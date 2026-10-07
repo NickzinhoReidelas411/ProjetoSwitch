@@ -1,0 +1,23 @@
+/* Sistema de Gerenciamento - style.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; min-height: 100vh; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); display: flex; flex-direction: column; align-items: center; padding: 30px 16px 0; color: #e0e0e0; }
+header { text-align: center; margin-bottom: 36px; }
+header h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: 2px; color: #e94560; text-shadow: 0 0 18px rgba(233,69,96,0.55); }
+header p.subtitle { margin-top: 8px; font-size: 1rem; color: #a0aec0; letter-spacing: 1px; }
+.card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 40px 36px; width: 100%; max-width: 700px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.btn-modulo { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border: none; border-radius: 12px; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease; color: #fff; box-shadow: 0 4px 14px rgba(0,0,0,0.35); text-align: left; }
+.btn-modulo:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 8px 24px rgba(0,0,0,0.45); filter: brightness(1.1); }
+.btn-modulo:active { transform: translateY(0) scale(0.98); }
+.btn-a { background: linear-gradient(135deg, #667eea, #764ba2); }
+.btn-b { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.btn-c { background: linear-gradient(135deg, #4facfe, #00f2fe); color: #1a1a2e; }
+.btn-d { background: linear-gradient(135deg, #43e97b, #38f9d7); color: #1a1a2e; }
+.btn-e { background: linear-gradient(135deg, #fa709a, #fee140); }
+.btn-f { background: linear-gradient(135deg, #a18cd1, #fbc2eb); color: #1a1a2e; }
+#resultado { border-radius: 14px; padding: 22px 24px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); min-height: 70px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; color: #e2e8f0; text-align: center; transition: background 0.3s; }
+#resultado.sucesso { background: rgba(67,233,123,0.12); border-color: rgba(67,233,123,0.35); color: #43e97b; }
+#resultado.erro { background: rgba(233,69,96,0.12); border-color: rgba(233,69,96,0.35); color: #e94560; }
+footer { margin-top: 40px; padding: 20px; text-align: center; font-size: 0.82rem; color: #4a5568; letter-spacing: 0.5px; width: 100%; max-width: 700px; border-top: 1px solid rgba(255,255,255,0.07); }
+footer span { color: #e94560; }
+@media (max-width: 480px) { header h1 { font-size: 1.7rem; } .card { padding: 28px 18px; } .menu-grid { grid-template-columns: 1fr 1fr; } }
